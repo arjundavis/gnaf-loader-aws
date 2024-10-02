@@ -1,0 +1,3 @@
+[submodule "loader_code"]
+	path = loader_code
+	url = https://github.com/minus34/gnaf-loader.git
