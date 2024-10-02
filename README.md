@@ -14,7 +14,7 @@ Boot it up and connect via ssh or through the aws terminal.
 # Install miniconda and make a python environment with psycopg
 You can run the miniconda_install.sh script to install the latest version. Then in a new terminal make a new conda environment and install psycopg. 
 ```bash
-conda env gnaf
+conda create -n gnaf
 conda activate gnaf
 conda install psycopg2
 ```
