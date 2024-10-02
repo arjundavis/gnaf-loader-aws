@@ -20,8 +20,8 @@ conda install psycopg2
 ```
 
 # Install postgres-db with postgis
-Run the bash script provided with sudo privliges on the EC2. 
-
+Run the bash script provided with sudo privliges on the EC2 to install the postgres and add postgis. 
+Then it will add a new database and create a new user with a password of your choice. 
 
 # Download two sets of zip files from data.gov.au
 
