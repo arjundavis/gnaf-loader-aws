@@ -10,28 +10,26 @@ if ! command -v unzip &> /dev/null; then
     echo "unzip could not be found, installing..."
     sudo apt update
     sudo apt install -y unzip
-else 
-    echo "unzip installed"
 fi
 
-# # Download the files in parallel
-# wget $gnafURL &
-# wget $adminbdrysURL &
+# Download the files in parallel
+wget $gnafURL &
+wget $adminbdrysURL &
 
-# # Wait for all background jobs to complete
-# wait
+# Wait for all background jobs to complete
+wait
 
-# # Check if the files exist before unzipping
-# if [[ -f "aug24_adminbounds_gda_94_shp.zip" ]]; then
-#     unzip aug24_adminbounds_gda_94_shp.zip -d adminbdrys
-# else
-#     echo "File aug24_adminbounds_gda_94_shp.zip not found!"
-#     exit 1
-# fi
+# Check if the files exist before unzipping
+if [[ -f "aug24_adminbounds_gda_94_shp.zip" ]]; then
+    unzip aug24_adminbounds_gda_94_shp.zip -d adminbdrys
+else
+    echo "File aug24_adminbounds_gda_94_shp.zip not found!"
+    exit 1
+fi
 
-# if [[ -f "g-naf_aug24_allstates_gda94_psv_1016.zip" ]]; then
-#     unzip g-naf_aug24_allstates_gda94_psv_1016.zip -d gnafGDA94
-# else
-#     echo "File g-naf_aug24_allstates_gda94_psv_1016.zip not found!"
-#     exit 1
-# fi
+if [[ -f "g-naf_aug24_allstates_gda94_psv_1016.zip" ]]; then
+    unzip g-naf_aug24_allstates_gda94_psv_1016.zip -d gnafGDA94
+else
+    echo "File g-naf_aug24_allstates_gda94_psv_1016.zip not found!"
+    exit 1
+fi

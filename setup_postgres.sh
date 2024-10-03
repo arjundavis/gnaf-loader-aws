@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Run this with sudo
+
 read -sp "Enter your custom PostgreSQL password for the 'postgres' user: " POSTGRES_PASSWORD
 echo
 
