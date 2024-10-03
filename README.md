@@ -1,6 +1,6 @@
 # gnaf-loader-aws
 ## Overview
-This guide explains how to set up the G-NAF loader on a PostgreSQL database hosted on an AWS EC2 instance or RDS.
+This guide explains how to set up the G-NAF loader on a PostgreSQL database hosted on an AWS Debian EC2 instance or RDS.
 
 ### What is G-NAF?
 The Geocoded National Address File (G-NAF) contains information about addresses in Australia. You can read more about it [here](https://data.gov.au/dataset/geocoded-national-address-file-g-naf).
