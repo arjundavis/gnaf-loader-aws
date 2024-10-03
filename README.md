@@ -21,10 +21,11 @@ conda install psycopg2
 
 # Install postgres-db with postgis
 Run the bash script provided with sudo privliges on the EC2 to install the postgres and add postgis. 
-Then it will add a new database and create a new user with a password of your choice. 
+Then it will add a new database and create a new user with a password of your choice (input into the terminal).
+
+The bash script includes a select postgis
 
 # Download two sets of zip files from data.gov.au
-
 Admin boundary data along with the G-NAF are required to be downloaded for the G-NAF loader. 
 These files can be downloaded in GDA94 or GDA2020 project or if using AUG24 files can run the script. 
 
